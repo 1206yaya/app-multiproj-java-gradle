@@ -1,0 +1,17 @@
+
+/*
+// To declare projects as part of a multi-project build use the 'include' method
+include 'shared'
+include 'api'
+include 'services:webservice'
+*/
+
+include('app-multiproj-java-gradle-common', ':app-multiproj-java-gradle-domain', ':app-multiproj-java-gradle-core', ':java-util')
+
+project(':app-multiproj-java-gradle-common').projectDir = new File('./common/app-multiproj-java-gradle-common')
+project(':app-multiproj-java-gradle-domain').projectDir = new File('./domain/app-multiproj-java-gradle-domain')
+
+project(':app-multiproj-java-gradle-core').projectDir = new File('./core/app-multiproj-java-gradle-core')
+
+
+project(':java-util').projectDir = new File('C:/Users/aya-win10/engineering/projects/java/java-util')
